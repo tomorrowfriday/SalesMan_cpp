@@ -1,0 +1,3 @@
+/cygdrive/c/Users/skravets/Desktop/Projects/SM2/build/CMakeFiles/rebuild_cache.dir
+/cygdrive/c/Users/skravets/Desktop/Projects/SM2/build/CMakeFiles/edit_cache.dir
+/cygdrive/c/Users/skravets/Desktop/Projects/SM2/build/CMakeFiles/a.dir
