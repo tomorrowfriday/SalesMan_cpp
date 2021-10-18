@@ -1,15 +1,5 @@
-#include <algorithm>
+#include "data.hpp"
 #include <iostream>
-#include <limits>
-#include <set>
-#include <vector>
-
-typedef size_t                          T_town;
-typedef std::vector     < T_town    >   T_path_val;
-typedef int                             T_dist;
-typedef std::vector     < T_dist    >   T_row;
-typedef std::vector     < T_row     >   T_matr;
-typedef std::set        < T_town    >   T_towns;
 
 class   T_path
 {
@@ -103,17 +93,12 @@ private:
 
 int main() {
   std::ios::sync_with_stdio(false);
-  int towns_total{};
-
-  do {
-  std::cout   <<  "Towns total (>= 2): ";
-  std::cin    >>  towns_total;
-  }
-  while(towns_total < 2);
-
-  std::cout << "Enter distances between towns:" <<  std::endl;
+  int towns_total = 0;
+  towns_total = itowns(towns_total);
 
   T_matr dist_matr(towns_total, T_row(towns_total));
+
+  std::cout << "Enter distances between towns:" <<  std::endl;
 
   for( T_town L{}; L < T_town( towns_total ); ++L ) {
     for( T_town R{}; R < T_town( towns_total ); ++R ) {
@@ -124,7 +109,7 @@ int main() {
       std::cin >> dist_matr[L][R];
     }
   }
- 
+  // idistance(towns_total, T_town);
   T_path path (dist_matr);
   path.find_and_print_shortest();
 }

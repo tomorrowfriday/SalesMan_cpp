@@ -1,5 +1,5 @@
-CMakeFiles/a.dir/main.cpp.o: \
- /cygdrive/c/Users/skravets/Desktop/Projects/SM2/main.cpp \
+CMakeFiles/a.dir/path.cpp.o: \
+ /cygdrive/c/Users/skravets/Desktop/Projects/SM2/path.cpp \
  /cygdrive/c/Users/skravets/Desktop/Projects/SM2/data.hpp \
  /usr/lib/gcc/x86_64-pc-cygwin/11/include/c++/algorithm \
  /usr/lib/gcc/x86_64-pc-cygwin/11/include/c++/utility \
